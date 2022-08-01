@@ -1,0 +1,7 @@
+django
+django-rest-framework
+psycopg2
+Pillow
+unidecode
+drf_yasg
+django-debug-toolbar
