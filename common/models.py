@@ -9,6 +9,7 @@ class User(AbstractUser):
     INVALID_CODE = "######"
 
     full_name = models.CharField(_("full name"), max_length=256)
+    is_company = models.BooleanField(default=False)
 
     created_at = models.DateTimeField(_("date created"), auto_now_add=True, null=True)
     updated_at = models.DateTimeField(_("date updated"), auto_now=True)
@@ -19,4 +20,4 @@ class User(AbstractUser):
         verbose_name = _("user")
         verbose_name_plural = _("users")
 
-    is_company = models.BooleanField(default=False)
+    
